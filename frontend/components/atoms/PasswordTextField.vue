@@ -22,35 +22,35 @@ const props = defineProps({
   },
   label: {
     type: String,
-    default: '',
+    default: ''
   },
   hint: {
     type: String,
-    default: '',
+    default: ''
   },
   color: {
     type: String,
-    default: 'primary',
+    default: 'primary'
   },
   prependInnerIcon: {
     type: String,
-    default: '',
+    default: ''
   },
   appendInnerIcon: {
     type: String,
-    default: '',
+    default: ''
   },
   clearable: {
     type: Boolean,
-    default: true,
+    default: true
   },
   counter: {
     type: Boolean,
-    default: false,
+    default: false
   },
   rules: {
     type: Array,
-    default: () => [],
+    default: () => []
   }
 })
 const emits = defineEmits(['update:modelValue'])

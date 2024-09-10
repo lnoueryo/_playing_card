@@ -8,7 +8,7 @@
 const props = defineProps({
   noGutters: {
     type: Boolean,
-    default: true,
+    default: true
   },
   align: {
     type: String,

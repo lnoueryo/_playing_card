@@ -20,15 +20,15 @@ const props = defineProps({
   },
   size: {
     type: String,
-    default: 'large',
+    default: 'large'
   },
   type: {
     type: String,
-    default: '',
+    default: ''
   },
   variant: {
     type: String,
-    default: 'elevated',
+    default: 'elevated'
   },
   prependIcon: {
     type: String,
@@ -40,8 +40,8 @@ const props = defineProps({
   },
   block: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 })
 </script>
 
