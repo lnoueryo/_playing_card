@@ -1,0 +1,20 @@
+<template>
+  <List>
+    <ListItem v-for="friend in friends" :title="friend.name" :prepend-avatar="friend.image" />
+  </List>
+</template>
+
+<script setup lang="ts">
+import List from '~/components/atoms/List.vue'
+import ListItem from '~/components/atoms/ListItem.vue'
+const friends = ref([
+  {
+    name: 'Inoue Ryo',
+    image: 'https://randomuser.me/api/portraits/women/75.jpg'
+  }
+])
+</script>
+
+<style scoped>
+
+</style>

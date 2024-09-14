@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   build: {
-    transpile: ['vuetify'],
+    transpile: ['vuetify']
   },
   modules: [
     (_options, nuxt) => {
@@ -14,13 +14,18 @@ export default defineNuxtConfig({
       })
     },
     '@nuxt/eslint',
-    '@pinia/nuxt',
+    '@pinia/nuxt'
   ],
+  eslint: {
+    config: {
+      stylistic: true
+    }
+  },
   vite: {
     vue: {
       template: {
-        transformAssetUrls,
-      },
-    },
-  },
+        transformAssetUrls
+      }
+    }
+  }
 })
